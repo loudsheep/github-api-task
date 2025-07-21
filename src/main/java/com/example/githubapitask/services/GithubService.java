@@ -3,16 +3,13 @@ package com.example.githubapitask.services;
 import com.example.githubapitask.dto.BranchDto;
 import com.example.githubapitask.dto.RepositoryDto;
 import com.example.githubapitask.exceptions.UserNotFoundException;
-import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
