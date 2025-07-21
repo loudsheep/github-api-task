@@ -6,7 +6,6 @@ import org.springframework.http.ResponseEntity;
 import java.util.Map;
 
 public class GlobalExceptionHandler {
-
     public ResponseEntity<Map<String, Object>> handleUserNotFound(UserNotFoundException ex) {
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body(Map.of(
@@ -14,5 +13,4 @@ public class GlobalExceptionHandler {
                         "message", ex.getMessage()
                 ));
     }
-
 }
