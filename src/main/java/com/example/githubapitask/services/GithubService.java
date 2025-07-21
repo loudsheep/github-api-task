@@ -6,6 +6,7 @@ import com.example.githubapitask.exceptions.UserNotFoundException;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClientResponseException;
 import org.springframework.web.client.RestTemplate;
 
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Service
 public class GithubService {
     private final RestTemplate restTemplate = new RestTemplate();
     private final String GITHUB_API_URL = "https://api.github.com";
